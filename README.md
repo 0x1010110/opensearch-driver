@@ -13,7 +13,7 @@ All schemas can be stored as JSON files that contain all the necessary informati
 ### Installation
 
 ```shell
-go get github.com/limangotech/opensearch-driver
+go get github.com/0x1010110/opensearch-driver
 ```
 
 ## Usage
@@ -81,7 +81,7 @@ Example usage in a `.go` file:
 package main
 
 import (
-  opensearchdriver "github.com/limangotech/opensearch-driver/pkg/opensearch"
+  opensearchdriver "github.com/0x1010110/opensearch-driver/pkg/opensearch"
   "github.com/opensearch-project/opensearch-go/v2"
 )
 

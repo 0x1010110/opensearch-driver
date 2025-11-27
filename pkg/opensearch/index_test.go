@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
 
-	"github.com/limangotech/opensearch-driver/pkg/opensearch"
-	"github.com/limangotech/opensearch-driver/tests/mocks/mock_opensearchapi"
-	"github.com/limangotech/opensearch-driver/tests/stubs"
+	"github.com/0x1010110/opensearch-driver/pkg/opensearch"
+	"github.com/0x1010110/opensearch-driver/tests/mocks/mock_opensearchapi"
+	"github.com/0x1010110/opensearch-driver/tests/stubs"
 )
 
 func TestMigrationsIndexManager_Upsert(t *testing.T) {

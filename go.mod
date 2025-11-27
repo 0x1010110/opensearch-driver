@@ -1,4 +1,4 @@
-module github.com/limangotech/opensearch-driver
+module github.com/0x1010110/opensearch-driver
 
 go 1.23.0
 

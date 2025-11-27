@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/limangotech/opensearch-driver/pkg/opensearch"
-	"github.com/limangotech/opensearch-driver/tests/stubs"
+	"github.com/0x1010110/opensearch-driver/pkg/opensearch"
+	"github.com/0x1010110/opensearch-driver/tests/stubs"
 )
 
 func TestReadErrorFromResponse(t *testing.T) {

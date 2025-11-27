@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/limangotech/opensearch-driver/pkg/opensearch"
+	"github.com/0x1010110/opensearch-driver/pkg/opensearch"
 )
 
 func TestNewMigrationFromRawContent(t *testing.T) {
