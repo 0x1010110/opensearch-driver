@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/opensearch-project/opensearch-go/v2/opensearchapi"
+	"github.com/opensearch-project/opensearch-go/v4/opensearchtransport"
 )
 
 type MigrationsIndexManagerInterface interface {
@@ -14,10 +14,10 @@ type MigrationsIndexManagerInterface interface {
 }
 
 type MigrationsIndexManager struct {
-	transport opensearchapi.Transport
+	transport opensearchtransport.Interface
 }
 
-func NewMigrationsIndexManager(transport opensearchapi.Transport) MigrationsIndexManager {
+func NewMigrationsIndexManager(transport opensearchtransport.Interface) MigrationsIndexManager {
 	return MigrationsIndexManager{
 		transport: transport,
 	}

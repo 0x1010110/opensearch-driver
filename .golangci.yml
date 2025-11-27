@@ -15,7 +15,7 @@ linters:
     - errname
     - errorlint
     - exhaustive
-    - exportloopref
+    - copyloopvar
     - forcetypeassert
     - funlen
     - gocheckcompilerdirectives
@@ -56,7 +56,7 @@ linters:
     - sloglint
     - stylecheck
     - tagliatelle
-    - tenv
+    - usetesting
     - testpackage
     - thelper
     - tparallel

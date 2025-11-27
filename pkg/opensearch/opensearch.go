@@ -9,7 +9,7 @@ import (
 	"net/http"
 
 	"github.com/golang-migrate/migrate/v4/database"
-	"github.com/opensearch-project/opensearch-go/v2/opensearchapi"
+	"github.com/opensearch-project/opensearch-go/v4/opensearchtransport"
 	"go.uber.org/atomic"
 )
 
@@ -20,7 +20,7 @@ const (
 )
 
 type OpenSearch struct {
-	transport         opensearchapi.Transport
+	transport         opensearchtransport.Interface
 	manager           MigrationsIndexManagerInterface
 	MigrationSequence []string
 	LastRunMigration  []byte
@@ -28,7 +28,7 @@ type OpenSearch struct {
 }
 
 func NewDriver(
-	transport opensearchapi.Transport,
+	transport opensearchtransport.Interface,
 	manager MigrationsIndexManagerInterface,
 ) *OpenSearch {
 	return &OpenSearch{
